@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modern Pricing Section</title>
+  </head>
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-header">
+        <h1>Choose Your Plan</h1>
+        <p>
+          Select the perfect plan for your needs. Upgrade or downgrade at any
+          time.
+        </p>
+
+        <div class="billing-toggle">
+          <span>Monthly</span>
+          <div class="toggle-switch" onclick="toggleBilling()"></div>
+          <span>Yearly <small>(Save 20%)</small></span>
+        </div>
+      </div>
+
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <div class="plan-name">Basic</div>
+          <div class="plan-price">$9<span>/month</span></div>
+          <div class="plan-description">
+            Perfect for individuals getting started
+          </div>
+
+          <ul class="features-list">
+            <li>
+              <div class="feature-icon">✓</div>
+              Up to 5 projects
+            </li>
+            <li>
+              <div class="feature-icon">✓</div>
+              10GB storage
+            </li>
+            <li>
+              <div class="feature-icon">✓</div>
+              Email support
+            </li>
+            <li>
+              <div class="feature-icon">✓</div>
+              Basic analytics
+            </li>
+            <li>
+              <div class="feature-icon">✓</div>
+              Mobile app access
+            </li>
+          </ul>
+
+          <button class="buy-button">Get Started</button>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="popular-badge">Most Popular</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price">$29<span>/month</span></div>
+          <div class="plan-description">
+            Best for growing businesses and teams
+          </div>
+
+          <ul class="features-list">
+            <li>
+              <div class="feature-icon">✓</div>
+              Unlimited projects
+            </li>
+            <li>
+              <div class="feature-icon">✓</div>
+              100GB storage
+            </li>
+            <li>
+              <div class="feature-icon">✓</div>
+              Priority support
+            </li>
+            <li>
+              <div class="feature-icon">✓</div>
+              Advanced analytics
+            </li>
+            <li>
+              <div class="feature-icon">✓</div>
+              Team collaboration
+            </li>
+          </ul>
+
+          <button class="buy-button">Start Free Trial</button>
+        </div>
+
+        <div class="pricing-card">
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-price">$99<span>/month</span></div>
+          <div class="plan-description">
+            For large organizations with custom needs
+          </div>
+
+          <ul class="features-list">
+            <li>
+              <div class="feature-icon">✓</div>
+              Custom integrations
+            </li>
+            <li>
+              <div class="feature-icon">✓</div>
+              Unlimited storage
+            </li>
+            <li>
+              <div class="feature-icon">✓</div>
+              24/7 phone support
+            </li>
+            <li>
+              <div class="feature-icon">✓</div>
+              Custom reporting
+            </li>
+            <li>
+              <div class="feature-icon">✓</div>
+              Dedicated account manager
+            </li>
+          </ul>
+
+          <button class="buy-button">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleBilling() {
+        const toggle = document.querySelector(".toggle-switch");
+        toggle.classList.toggle("active");
+
+        // Add a subtle animation effect
+        toggle.style.transform = "scale(0.95)";
+        setTimeout(() => {
+          toggle.style.transform = "scale(1)";
+        }, 150);
+      }
+    </script>
+  </body>
+</html>
